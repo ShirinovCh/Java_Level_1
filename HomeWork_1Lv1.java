@@ -12,6 +12,7 @@ class HomeWork_1Lv1 {
 		b = 7;
 		c = 22;
 		d = 1;
+		System.out.println("a = " + a + "b = " + b + "c = " + c + "d = " + d);// show variables
 	} 
 	
 }
