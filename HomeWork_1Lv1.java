@@ -22,6 +22,7 @@ public static void main (String[] args){
 		System.out.println(limit10to20());
 		/*System.out.println(positive_or_negative());*/
 		System.out.println(negative_true());
+		System.out.println(helloName());
 	} 
 	public static long calculate(int a, int b, int c, int d){// method return calculate
 		return a * (b + (c / d));
@@ -56,4 +57,11 @@ public static void main (String[] args){
 		else
 			return false;
 	}
+	public static String helloName (){ // output greeting
+		System.out.println("Enter your name");
+		Scanner scanner =  new Scanner(System.in);
+        String name = scanner.next();
+		return "Hello " + name + "!";
+	}
+		
 }
