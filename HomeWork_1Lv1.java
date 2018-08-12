@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 
 class HomeWork_1Lv1 {
 public static void main (String[] args){
@@ -19,16 +19,20 @@ public static void main (String[] args){
 		System.out.println(" a = " + a + ", b = " + b + ", c = " + c + ", d = " + d);// show variables
 		System.out.println(" i = " + i);
 		System.out.println( calculate(5,7,22,1) );
-		System.out.println( limit10to20(3,16) );
+		System.out.println( limit10to20() );
 	} 
 	public static long calculate(int a, int b, int c, int d){// method return
 		return a * (b + (c / d));
 	}
-	public static boolean limit10to20 (int a, int b){ // range limit
+	public static boolean limit10to20 (){ // range limit
 		System.out.println("number ranging from 10 to 20?");
+		Scanner scanner =  new Scanner(System.in);
+        int a = scanner.nextInt();
+		int b = scanner.nextInt();
 		if ((a + b) >= 10 && (a + b) <= 20)
 			return true;
 		else
 			return false;
 	}
+	
 }
