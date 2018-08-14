@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 class HomeWork_1Lv1 {
 public static void main (String[] args){
-		byte a;// create new variables
+        byte a;// create new variables
 		short b;
 		int c;
 		long d;
@@ -83,7 +83,7 @@ public static void main (String[] args){
 		if (a < 1600)
 			return "Enter year after 1600, you enter " + numberString;
 		else if
-			(a % 4 == 0 && a % 400 == 0 && a % 100 != 0) // how will i be able to write this calculate?
+			(a % 4 == 0 && a % 100 != 0 || a % 400 == 0) // how will i be able to write this calculate?
 			return numberString + " is leap ";
 		else 
 			return numberString + " is usual ";
