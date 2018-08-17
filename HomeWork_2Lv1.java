@@ -36,4 +36,5 @@ class HomeWork_2Lv1 {
 			System.out.println(Arrays.toString(q));	
 		}
 	}
+	
 }
