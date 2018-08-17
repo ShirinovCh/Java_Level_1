@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 class HomeWork_1Lv1 {
 public static void main (String[] args){
-		byte a;// create new variables
+        byte a;// create new variables
 		short b;
 		int c;
 		long d;
@@ -30,6 +30,7 @@ public static void main (String[] args){
 		System.out.println(positive_or_negative());
 		System.out.println(negative_true());
 		System.out.println(helloName());
+		System.out.println(gregorianCalendar());
 	} 
 	public static long calculate(int a, int b, int c, int d){// method return calculate
 		return a * (b + (c / d));
@@ -71,7 +72,20 @@ public static void main (String[] args){
 		System.out.println("Enter your name");
 		Scanner scanner =  new Scanner(System.in);
         String name = scanner.next();
-		return "Hello " + name + "!";
+		return "Hello " + name + "! ";
 	}
-		
+	public static String gregorianCalendar () { // Gregorian calendar, define a leap year
+		System.out.println("Do you know what is a leap year?");
+		System.out.println("Enter year after 1600");
+		Scanner scanner =  new Scanner(System.in);
+        int a = scanner.nextInt();
+		String numberString = String.valueOf(a);
+		if (a < 1600)
+			return "Enter year after 1600, you enter " + numberString;
+		else if
+			(a % 4 == 0 && a % 100 != 0 || a % 400 == 0) // how will i be able to write this calculate?
+			return numberString + " is leap ";
+		else 
+			return numberString + " is usual ";
+	}	
 }
