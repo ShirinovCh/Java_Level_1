@@ -18,14 +18,20 @@ class HomeWork_3Lv1 {
 		//int inputnum = sc.nextInt();
 		System.out.println("You have 3 attempts to find the hidden number!");
 		inputNumber();		
-		System.out.println("Do you want play again? 1 - yes, 2 - no.");// repeat programm again
+		/*System.out.println("Do you want play again? 1 - yes, 2 - no.");// repeat programm again
 		Scanner sc = new Scanner(System.in);
-		int inputnum = sc.nextInt();
-		if (inputnum == 1){
-			inputNumber();
-		} 
-		else {
-			System.out.println("Goodbye! Thank a lot to your join!");
+		int inputnum = sc.nextInt();*/
+		while (true) {
+			System.out.println("Do you want play again? 1 - yes, 2 - no.");// repeat programm again
+			Scanner sc = new Scanner(System.in);
+			int inputnum = sc.nextInt();
+			if (inputnum == 1){
+				inputNumber();
+			} 
+			else {
+				System.out.println("Goodbye! Thank a lot to your join!");
+				break;
+			}
 		}
 	}
 	public static void inputNumber(){ // input number
