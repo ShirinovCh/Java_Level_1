@@ -13,14 +13,9 @@ class HomeWork_3Lv1 {
 		компьютер должен сообщить больше ли указанное пользователем число,
 		чем загаданное, или меньше. После победы или проигрыша выводится запрос
 		– «Повторить игру еще раз? 1 – да / 0 – нет»(1 – повторить, 0 – нет).*/
-	public static void main (String[] args){
-		//Scanner sc = new Scanner(System.in);
-		//int inputnum = sc.nextInt();
+	public static void main (String[] args){		
 		System.out.println("You have 3 attempts to find the hidden number!");
 		inputNumber();		
-		/*System.out.println("Do you want play again? 1 - yes, 2 - no.");// repeat programm again
-		Scanner sc = new Scanner(System.in);
-		int inputnum = sc.nextInt();*/
 		while (true) {
 			System.out.println("Do you want play again? 1 - yes, 2 - no.");// repeat programm again
 			Scanner sc = new Scanner(System.in);
@@ -59,7 +54,7 @@ class HomeWork_3Lv1 {
 				attempt++;
 				System.out.println("Attempt # " + attempt);
 			}
-			else /*if (attempt == 3)*/{
+			else {
 				System.out.println("You didn't guess! Your attempt is finished! Game over!");
 			break;
 			}			
